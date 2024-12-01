@@ -19,3 +19,9 @@ Three queues: logs, metrics, errors. Workers process jobs async with exponential
 **feat: log ingestion endpoint with schema validation and 202 response**
 
 POST /api/v1/ingest/logs validates schema, pushes to BullMQ logs queue, returns 202 immediately.
+
+### 2024-12-01
+
+**feat: metrics ingestion with time-series storage**
+
+Metrics stored with timestamp, name, value, service, and tags columns. Supports batch submission.
