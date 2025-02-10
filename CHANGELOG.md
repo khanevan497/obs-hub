@@ -25,3 +25,9 @@ POST /api/v1/ingest/logs validates schema, pushes to BullMQ logs queue, returns 
 **feat: metrics ingestion with time-series storage**
 
 Metrics stored with timestamp, name, value, service, and tags columns. Supports batch submission.
+
+### 2025-02-10
+
+**feat: error ingestion with SHA256 fingerprint grouping**
+
+Fingerprint = SHA256(error_type + normalized_message + top 3 stack frames). Groups identical errors.
