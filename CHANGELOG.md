@@ -31,3 +31,9 @@ Metrics stored with timestamp, name, value, service, and tags columns. Supports 
 **feat: error ingestion with SHA256 fingerprint grouping**
 
 Fingerprint = SHA256(error_type + normalized_message + top 3 stack frames). Groups identical errors.
+
+### 2025-02-16
+
+**feat: JWT authentication with organization_id encoded in token**
+
+JWT encodes organizationId. All query endpoints scope to organization from token, never request body.
