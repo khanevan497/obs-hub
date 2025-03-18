@@ -37,3 +37,9 @@ Fingerprint = SHA256(error_type + normalized_message + top 3 stack frames). Grou
 **feat: JWT authentication with organization_id encoded in token**
 
 JWT encodes organizationId. All query endpoints scope to organization from token, never request body.
+
+### 2025-03-18
+
+**feat: API key authentication with bcrypt hash storage**
+
+API keys stored as bcrypt hashes. Plaintext shown only at creation. Format: obs_xxx prefix.
