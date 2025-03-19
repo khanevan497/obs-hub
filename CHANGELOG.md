@@ -43,3 +43,9 @@ JWT encodes organizationId. All query endpoints scope to organization from token
 **feat: API key authentication with bcrypt hash storage**
 
 API keys stored as bcrypt hashes. Plaintext shown only at creation. Format: obs_xxx prefix.
+
+### 2025-03-19
+
+**feat: Redis rate limiting at 10000 events per minute per project**
+
+Rate limit checked per (project_id, minute). Returns 429 with Retry-After header on breach.
