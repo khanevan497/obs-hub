@@ -49,3 +49,9 @@ API keys stored as bcrypt hashes. Plaintext shown only at creation. Format: obs_
 **feat: Redis rate limiting at 10000 events per minute per project**
 
 Rate limit checked per (project_id, minute). Returns 429 with Retry-After header on breach.
+
+### 2025-03-21
+
+**feat: log query endpoint with field filter syntax**
+
+Supports level:error service:api environment:production plus free-text. Paginated with limit and offset.
