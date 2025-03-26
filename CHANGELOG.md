@@ -55,3 +55,9 @@ Rate limit checked per (project_id, minute). Returns 429 with Retry-After header
 **feat: log query endpoint with field filter syntax**
 
 Supports level:error service:api environment:production plus free-text. Paginated with limit and offset.
+
+### 2025-03-26
+
+**feat: error groups endpoint with occurrence counts**
+
+GET /api/v1/errors/groups returns fingerprints with count, first_seen, last_seen, example stack trace.
