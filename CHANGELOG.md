@@ -61,3 +61,9 @@ Supports level:error service:api environment:production plus free-text. Paginate
 **feat: error groups endpoint with occurrence counts**
 
 GET /api/v1/errors/groups returns fingerprints with count, first_seen, last_seen, example stack trace.
+
+### 2025-04-02
+
+**feat: metrics aggregation with date_trunc time bucketing**
+
+Aggregation options: avg, sum, count. Time buckets via date_trunc for minute, hour, day granularity.
