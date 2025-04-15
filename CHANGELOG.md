@@ -67,3 +67,9 @@ GET /api/v1/errors/groups returns fingerprints with count, first_seen, last_seen
 **feat: metrics aggregation with date_trunc time bucketing**
 
 Aggregation options: avg, sum, count. Time buckets via date_trunc for minute, hour, day granularity.
+
+### 2025-04-15
+
+**feat: alert rule evaluation triggered after every metrics batch**
+
+Worker evaluates all enabled AlertRules for project after processing each metrics job.
