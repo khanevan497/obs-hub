@@ -79,3 +79,9 @@ Worker evaluates all enabled AlertRules for project after processing each metric
 **feat: alert incident deduplication per alert rule**
 
 Only one active incident per alert rule at a time. New incident only if no existing triggered incident.
+
+### 2025-05-02
+
+**feat: WebSocket real-time events via Socket.io org rooms**
+
+Each org gets a Socket.io room. Workers emit log_created, metric_ingested, alert_triggered, alert_resolved.
