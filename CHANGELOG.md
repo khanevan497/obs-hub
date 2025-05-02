@@ -73,3 +73,9 @@ Aggregation options: avg, sum, count. Time buckets via date_trunc for minute, ho
 **feat: alert rule evaluation triggered after every metrics batch**
 
 Worker evaluates all enabled AlertRules for project after processing each metrics job.
+
+### 2025-05-02
+
+**feat: alert incident deduplication per alert rule**
+
+Only one active incident per alert rule at a time. New incident only if no existing triggered incident.
