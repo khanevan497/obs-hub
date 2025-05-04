@@ -85,3 +85,9 @@ Only one active incident per alert rule at a time. New incident only if no exist
 **feat: WebSocket real-time events via Socket.io org rooms**
 
 Each org gets a Socket.io room. Workers emit log_created, metric_ingested, alert_triggered, alert_resolved.
+
+### 2025-05-04
+
+**feat: dashboard summary endpoint with key metrics**
+
+Returns total logs errors metrics today, active alert count, and ingestion rate per project.
