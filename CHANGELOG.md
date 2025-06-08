@@ -91,3 +91,9 @@ Each org gets a Socket.io room. Workers emit log_created, metric_ingested, alert
 **feat: dashboard summary endpoint with key metrics**
 
 Returns total logs errors metrics today, active alert count, and ingestion rate per project.
+
+### 2025-06-08
+
+**feat: queue health monitoring endpoint**
+
+GET /api/v1/queue/health returns waiting active failed counts for each of the three queues.
