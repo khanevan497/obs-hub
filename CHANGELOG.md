@@ -97,3 +97,9 @@ Returns total logs errors metrics today, active alert count, and ingestion rate 
 **feat: queue health monitoring endpoint**
 
 GET /api/v1/queue/health returns waiting active failed counts for each of the three queues.
+
+### 2025-06-09
+
+**feat: React dashboard with TanStack Query and Recharts**
+
+Dashboard page with summary cards and ingestion rate sparklines. Auto-refreshes every 30 seconds.
