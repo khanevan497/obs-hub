@@ -103,3 +103,9 @@ GET /api/v1/queue/health returns waiting active failed counts for each of the th
 **feat: React dashboard with TanStack Query and Recharts**
 
 Dashboard page with summary cards and ingestion rate sparklines. Auto-refreshes every 30 seconds.
+
+### 2025-06-15
+
+**feat: logs page with full-text search and level filter**
+
+Search bar sends query to GET /api/v1/logs. Level filter chips for DEBUG INFO WARN ERROR.
