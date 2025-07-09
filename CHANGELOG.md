@@ -109,3 +109,9 @@ Dashboard page with summary cards and ingestion rate sparklines. Auto-refreshes 
 **feat: logs page with full-text search and level filter**
 
 Search bar sends query to GET /api/v1/logs. Level filter chips for DEBUG INFO WARN ERROR.
+
+### 2025-07-09
+
+**feat: error groups page with stack trace viewer**
+
+Error groups table with count and last-seen. Click to expand full stack trace and occurrence list.
