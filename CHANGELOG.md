@@ -115,3 +115,9 @@ Search bar sends query to GET /api/v1/logs. Level filter chips for DEBUG INFO WA
 **feat: error groups page with stack trace viewer**
 
 Error groups table with count and last-seen. Click to expand full stack trace and occurrence list.
+
+### 2025-07-28
+
+**feat: metrics page with time-series line charts**
+
+Recharts LineChart per metric name. Time range picker for 1h 6h 24h 7d. Aggregation toggle.
