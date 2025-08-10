@@ -121,3 +121,9 @@ Error groups table with count and last-seen. Click to expand full stack trace an
 **feat: metrics page with time-series line charts**
 
 Recharts LineChart per metric name. Time range picker for 1h 6h 24h 7d. Aggregation toggle.
+
+### 2025-08-10
+
+**feat: alerts management page with create and delete**
+
+Form to create alert rule with metric name, condition, threshold, window, severity. List with delete.
