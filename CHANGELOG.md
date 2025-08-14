@@ -127,3 +127,9 @@ Recharts LineChart per metric name. Time range picker for 1h 6h 24h 7d. Aggregat
 **feat: alerts management page with create and delete**
 
 Form to create alert rule with metric name, condition, threshold, window, severity. List with delete.
+
+### 2025-08-14
+
+**feat: projects management page with API key display**
+
+Create project with name, slug, environment. API key shown once on creation with copy button.
