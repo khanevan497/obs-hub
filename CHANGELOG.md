@@ -133,3 +133,9 @@ Form to create alert rule with metric name, condition, threshold, window, severi
 **feat: projects management page with API key display**
 
 Create project with name, slug, environment. API key shown once on creation with copy button.
+
+### 2025-10-01
+
+**fix: resolve log ingestion message loss under concurrent load**
+
+Worker concurrency was too high causing DB write contention. Reduced to 5 concurrent workers per queue.
