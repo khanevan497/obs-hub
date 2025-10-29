@@ -139,3 +139,9 @@ Create project with name, slug, environment. API key shown once on creation with
 **fix: resolve log ingestion message loss under concurrent load**
 
 Worker concurrency was too high causing DB write contention. Reduced to 5 concurrent workers per queue.
+
+### 2025-10-29
+
+**feat: idempotent ingestion via event_id deduplication**
+
+INSERT ON CONFLICT (project_id, event_id) DO NOTHING. Duplicate submissions silently ignored.
