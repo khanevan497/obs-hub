@@ -145,3 +145,9 @@ Worker concurrency was too high causing DB write contention. Reduced to 5 concur
 **feat: idempotent ingestion via event_id deduplication**
 
 INSERT ON CONFLICT (project_id, event_id) DO NOTHING. Duplicate submissions silently ignored.
+
+### 2025-11-25
+
+**fix: fix metrics aggregation off-by-one in time window boundary**
+
+Window end was exclusive but query used <=. Changed to < end to match exclusive boundary semantics.
