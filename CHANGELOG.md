@@ -151,3 +151,9 @@ INSERT ON CONFLICT (project_id, event_id) DO NOTHING. Duplicate submissions sile
 **fix: fix metrics aggregation off-by-one in time window boundary**
 
 Window end was exclusive but query used <=. Changed to < end to match exclusive boundary semantics.
+
+### 2025-12-13
+
+**feat: nightly cron job for log metrics and error retention**
+
+Cron at 02:00 UTC deletes logs > 7 days, metrics > 30 days, errors > 30 days.
