@@ -157,3 +157,9 @@ Window end was exclusive but query used <=. Changed to < end to match exclusive 
 **feat: nightly cron job for log metrics and error retention**
 
 Cron at 02:00 UTC deletes logs > 7 days, metrics > 30 days, errors > 30 days.
+
+### 2025-12-21
+
+**chore: Docker Compose orchestrating API frontend PostgreSQL Redis**
+
+docker-compose.yml with health checks and depends_on ordering. All services on shared network.
