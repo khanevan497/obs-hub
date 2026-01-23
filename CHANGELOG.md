@@ -163,3 +163,9 @@ Cron at 02:00 UTC deletes logs > 7 days, metrics > 30 days, errors > 30 days.
 **chore: Docker Compose orchestrating API frontend PostgreSQL Redis**
 
 docker-compose.yml with health checks and depends_on ordering. All services on shared network.
+
+### 2026-01-23
+
+**perf: add pg_trgm GIN index for log full-text search**
+
+CREATE INDEX ON logs USING GIN (message gin_trgm_ops). ILIKE queries now use index scan.
