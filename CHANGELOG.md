@@ -169,3 +169,9 @@ docker-compose.yml with health checks and depends_on ordering. All services on s
 **perf: add pg_trgm GIN index for log full-text search**
 
 CREATE INDEX ON logs USING GIN (message gin_trgm_ops). ILIKE queries now use index scan.
+
+### 2026-02-12
+
+**fix: fix WebSocket room scoping leaking events across organizations**
+
+Room name changed from project slug to organization UUID. Prevents cross-org event leakage.
