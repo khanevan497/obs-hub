@@ -181,3 +181,9 @@ Room name changed from project slug to organization UUID. Prevents cross-org eve
 **feat: error stack trace parsing and normalized display**
 
 Stack frames parsed into file, line, function columns. Displayed as formatted table in error detail.
+
+### 2026-02-22
+
+**feat: log detail page with metadata JSON viewer**
+
+Log detail shows all fields plus metadata as collapsible JSON tree viewer.
