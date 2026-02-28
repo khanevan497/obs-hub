@@ -187,3 +187,9 @@ Stack frames parsed into file, line, function columns. Displayed as formatted ta
 **feat: log detail page with metadata JSON viewer**
 
 Log detail shows all fields plus metadata as collapsible JSON tree viewer.
+
+### 2026-02-28
+
+**docs: document ingestion API with curl examples**
+
+README section with curl examples for log metrics and error ingestion including rate limit behavior.
