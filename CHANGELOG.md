@@ -193,3 +193,9 @@ Log detail shows all fields plus metadata as collapsible JSON tree viewer.
 **docs: document ingestion API with curl examples**
 
 README section with curl examples for log metrics and error ingestion including rate limit behavior.
+
+### 2026-03-11
+
+**refactor: extract queue factory to shared QueueModule**
+
+QueueModule exports BullMQ queues with consistent config. Imported by ingestion, alerts, and demo modules.
