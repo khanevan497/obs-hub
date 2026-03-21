@@ -199,3 +199,9 @@ README section with curl examples for log metrics and error ingestion including 
 **refactor: extract queue factory to shared QueueModule**
 
 QueueModule exports BullMQ queues with consistent config. Imported by ingestion, alerts, and demo modules.
+
+### 2026-03-21
+
+**feat: self-monitoring telemetry emitted through own ingestion pipeline**
+
+Platform emits ingestion.requests, queue.depth, worker.failures, api.latency metrics to itself.
