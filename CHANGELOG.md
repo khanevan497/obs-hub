@@ -205,3 +205,9 @@ QueueModule exports BullMQ queues with consistent config. Imported by ingestion,
 **feat: self-monitoring telemetry emitted through own ingestion pipeline**
 
 Platform emits ingestion.requests, queue.depth, worker.failures, api.latency metrics to itself.
+
+### 2026-03-22
+
+**fix: fix Redis rate limit key not expiring correctly**
+
+EXPIRE was called before SET in some code paths. Rewrote as single SET with EX option.
