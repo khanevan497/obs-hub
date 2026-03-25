@@ -211,3 +211,9 @@ Platform emits ingestion.requests, queue.depth, worker.failures, api.latency met
 **fix: fix Redis rate limit key not expiring correctly**
 
 EXPIRE was called before SET in some code paths. Rewrote as single SET with EX option.
+
+### 2026-03-25
+
+**feat: demo telemetry generator with random latency spikes**
+
+npm run demo streams logs metrics and errors to platform. Includes random p99 latency spikes.
