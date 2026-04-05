@@ -217,3 +217,9 @@ EXPIRE was called before SET in some code paths. Rewrote as single SET with EX o
 **feat: demo telemetry generator with random latency spikes**
 
 npm run demo streams logs metrics and errors to platform. Includes random p99 latency spikes.
+
+### 2026-04-05
+
+**feat: alert severity levels critical warning and info**
+
+Alert rules now have severity field. Dashboard shows critical alerts prominently with red badge.
