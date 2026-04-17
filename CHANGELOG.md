@@ -223,3 +223,9 @@ npm run demo streams logs metrics and errors to platform. Includes random p99 la
 **feat: alert severity levels critical warning and info**
 
 Alert rules now have severity field. Dashboard shows critical alerts prominently with red badge.
+
+### 2026-04-17
+
+**fix: resolve TypeORM connection pool leak on high ingestion**
+
+Workers were not releasing connections on error. Added finally block to release in all worker handlers.
