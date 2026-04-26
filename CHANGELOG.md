@@ -229,3 +229,9 @@ Alert rules now have severity field. Dashboard shows critical alerts prominently
 **fix: resolve TypeORM connection pool leak on high ingestion**
 
 Workers were not releasing connections on error. Added finally block to release in all worker handlers.
+
+### 2026-04-26
+
+**feat: project API key rotation with immediate old key invalidation**
+
+POST /api/v1/projects/:id/rotate-key generates new key and immediately invalidates old hash.
