@@ -235,3 +235,9 @@ Workers were not releasing connections on error. Added finally block to release 
 **feat: project API key rotation with immediate old key invalidation**
 
 POST /api/v1/projects/:id/rotate-key generates new key and immediately invalidates old hash.
+
+### 2026-05-26
+
+**perf: add partial index on error fingerprint for active errors**
+
+CREATE INDEX ON error_events (fingerprint) WHERE resolved_at IS NULL. Active error queries 10x faster.
