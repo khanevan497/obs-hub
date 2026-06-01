@@ -241,3 +241,9 @@ POST /api/v1/projects/:id/rotate-key generates new key and immediately invalidat
 **perf: add partial index on error fingerprint for active errors**
 
 CREATE INDEX ON error_events (fingerprint) WHERE resolved_at IS NULL. Active error queries 10x faster.
+
+### 2026-06-01
+
+**feat: log level distribution bar chart on dashboard**
+
+BarChart showing count per log level for current day. Updates on WebSocket log_created events.
