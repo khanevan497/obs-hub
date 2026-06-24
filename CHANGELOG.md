@@ -247,3 +247,9 @@ CREATE INDEX ON error_events (fingerprint) WHERE resolved_at IS NULL. Active err
 **feat: log level distribution bar chart on dashboard**
 
 BarChart showing count per log level for current day. Updates on WebSocket log_created events.
+
+### 2026-06-24
+
+**fix: fix cursor-based pagination on logs query endpoint**
+
+Cursor was being encoded incorrectly when timestamp had microseconds. Fixed to use id-based cursor.
