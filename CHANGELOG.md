@@ -253,3 +253,9 @@ BarChart showing count per log level for current day. Updates on WebSocket log_c
 **fix: fix cursor-based pagination on logs query endpoint**
 
 Cursor was being encoded incorrectly when timestamp had microseconds. Fixed to use id-based cursor.
+
+### 2026-07-07
+
+**refactor: move alert evaluation logic to dedicated AlertsService**
+
+Alert evaluation extracted from worker into AlertsService. Worker delegates to service, easier to test.
