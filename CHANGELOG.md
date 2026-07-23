@@ -259,3 +259,9 @@ Cursor was being encoded incorrectly when timestamp had microseconds. Fixed to u
 **refactor: move alert evaluation logic to dedicated AlertsService**
 
 Alert evaluation extracted from worker into AlertsService. Worker delegates to service, easier to test.
+
+### 2026-07-23
+
+**feat: metric name autocomplete on alert rule creation**
+
+GET /api/v1/metrics/names returns distinct metric names for org. Alert form autocompletes from this.
