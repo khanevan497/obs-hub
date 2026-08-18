@@ -265,3 +265,9 @@ Alert evaluation extracted from worker into AlertsService. Worker delegates to s
 **feat: metric name autocomplete on alert rule creation**
 
 GET /api/v1/metrics/names returns distinct metric names for org. Alert form autocompletes from this.
+
+### 2026-08-18
+
+**docs: add architecture diagram and scaling strategy to README**
+
+Mermaid diagram of ingestion flow. Section on scaling path from current NestJS setup to Kafka+ClickHouse.
