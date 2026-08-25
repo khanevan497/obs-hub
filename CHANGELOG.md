@@ -271,3 +271,9 @@ GET /api/v1/metrics/names returns distinct metric names for org. Alert form auto
 **docs: add architecture diagram and scaling strategy to README**
 
 Mermaid diagram of ingestion flow. Section on scaling path from current NestJS setup to Kafka+ClickHouse.
+
+### 2026-08-25
+
+**feat: export filtered logs to newline-delimited JSON**
+
+GET /api/v1/logs/export applies same filters as query endpoint and streams NDJSON response.
