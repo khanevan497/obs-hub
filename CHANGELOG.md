@@ -277,3 +277,9 @@ Mermaid diagram of ingestion flow. Section on scaling path from current NestJS s
 **feat: export filtered logs to newline-delimited JSON**
 
 GET /api/v1/logs/export applies same filters as query endpoint and streams NDJSON response.
+
+### 2026-09-16
+
+**fix: fix WebSocket token refresh causing duplicate room subscriptions**
+
+Client was joining room again on reconnect without leaving first. Added leave before join on reconnect.
