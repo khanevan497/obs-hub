@@ -283,3 +283,9 @@ GET /api/v1/logs/export applies same filters as query endpoint and streams NDJSO
 **fix: fix WebSocket token refresh causing duplicate room subscriptions**
 
 Client was joining room again on reconnect without leaving first. Added leave before join on reconnect.
+
+### 2026-09-25
+
+**chore: add NestJS Throttler guard on dashboard query endpoints**
+
+ThrottlerGuard on DashboardController and MetricsController limits to 60 requests per minute per IP.
