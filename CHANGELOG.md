@@ -289,3 +289,9 @@ Client was joining room again on reconnect without leaving first. Added leave be
 **chore: add NestJS Throttler guard on dashboard query endpoints**
 
 ThrottlerGuard on DashboardController and MetricsController limits to 60 requests per minute per IP.
+
+### 2026-10-04
+
+**release: v1.0.0 stable observability platform**
+
+First stable release. Ingestion, queuing, alerting, real-time dashboard, error grouping all complete.
