@@ -1,0 +1,48 @@
+{
+  "name": "observability-api",
+  "version": "1.0.0",
+  "description": "Observability Platform API",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "start:dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+    "demo": "ts-node src/demo/demo-runner.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.3.0",
+    "@nestjs/core": "^10.3.0",
+    "@nestjs/platform-express": "^10.3.0",
+    "@nestjs/config": "^3.2.0",
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/passport": "^10.0.3",
+    "@nestjs/typeorm": "^10.0.2",
+    "@nestjs/websockets": "^10.3.0",
+    "@nestjs/platform-socket.io": "^10.3.0",
+    "@nestjs/throttler": "^5.1.2",
+    "@nestjs/schedule": "^4.0.1",
+    "typeorm": "^0.3.20",
+    "pg": "^8.11.3",
+    "bullmq": "^5.4.2",
+    "ioredis": "^5.3.2",
+    "bcrypt": "^5.1.1",
+    "class-validator": "^0.14.1",
+    "class-transformer": "^0.5.1",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.7.4",
+    "reflect-metadata": "^0.2.1",
+    "rxjs": "^7.8.1",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.11.5",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/passport-local": "^1.0.38",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}

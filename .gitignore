@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+.DS_Store
+.claude/
+CLAUDE.md
+AGENTS.md
+skills-lock.json
